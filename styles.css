@@ -22,14 +22,16 @@ body {
 }
 
 .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;             
   margin-top: 40px;
 }
 
 .color-btn {
-  width: 45vw;
-  max-width: 160px;
+  width: 140px;           
   height: 140px;
-  margin: 15px;
   border: none;
   border-radius: 20px;
   font-size: 1rem;
@@ -37,6 +39,14 @@ body {
   cursor: pointer;
   transition: 0.2s;
 }
+
+@media (max-width: 360px) {
+  .color-btn {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 
 #red { background: #e74c3c; }
 #green { background: #27ae60; }
